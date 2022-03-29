@@ -1,0 +1,283 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: lightsteelblue;
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    max-width: 1350px;
+    margin: auto;
+}
+
+section{
+    width: 100%;
+    margin: 0px;
+}
+
+.img-fluid{
+    max-width: 100%;
+}
+
+.header{
+    background-color: royalblue;
+    float: left;
+}
+
+.logo{
+    width: 30%;
+    float: left;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    padding-top: 10px;
+}
+
+.logo ul li{
+    list-style-type: none;
+    display: inline-block;
+}
+
+.name{
+    width: 35%;
+    float: left;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 0px;
+}
+
+.name ul li{
+    list-style-type: none;
+    display: inline-block;  
+}
+
+.card-container{
+    width: 100%;
+    float: left;
+    background-color: aliceblue;
+    margin-top: 50px;
+    border-radius: 8px;
+    padding-top: 20px;
+}
+
+.card{
+    width: 18%;
+    background-color: #fff;
+    box-shadow: 0 0 3px lightgrey;
+    border-radius: 2px;
+    text-align: center;
+    padding: 18px 8px;
+    margin-bottom: 20px;
+    margin-left: 18px;
+    display: inline-block;
+}
+
+.pro-img{
+    border-radius: 50%;
+    width: 70px;
+    border: 4px solid #fff;
+    outline: 2px solid orange;
+}
+
+#btn1{
+    background-color: orange;
+    border: 0px;
+    border-radius: 3px;
+    padding: 1px 40px;
+    color: #fff;
+    font-weight: 100;
+    font-size: 12px;
+}
+
+.table{
+    width: 100%;
+    border-collapse:collapse;
+}
+
+table tr { 
+    border-bottom: 1px solid darkgray;
+}
+
+td{
+    padding-right: 2px;
+}
+
+table tr:last-child{
+    border-bottom: 0px solid #fff;
+}
+
+.rowHeading{
+    font-size: 12px;
+    font-weight: 500;
+    text-align: left;
+}
+
+.rowData{
+    font-size: 11px;
+    font-weight: 500;
+    text-align: right;
+}
+
+.footer{
+    background-color: royalblue;
+    float: left;
+    margin-top: 22px;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    padding-top: 24px;
+    position: relative;
+    padding-bottom: 6px;
+}
+
+.header-menu{
+    width: 100%;
+    float: left;
+}
+
+.header-menu ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 0px 17px;
+    margin-top: 30px;
+    margin-bottom: 8px;
+    border-radius: 6px 6px 0px 0px;
+}
+
+.header-menu ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.header-menu ul li a i{
+    padding-left:4px;
+}
+
+.dropdown{
+    position:absolute;
+    top: 100px;
+    display: none;
+}
+
+ul.dropdown li{
+    display: block;
+    background-color: #fff;
+    list-style-type: none;
+    margin: 0px;
+    border-radius: 0px;
+}
+
+ul.dropdown li a{
+    color: #000;
+    text-decoration: none;
+}
+
+.header-menu ul li:hover ul.dropdown{
+    display: block;
+}
+
+.helpDesk{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50px);
+    bottom: 34px;
+}
+
+.btn2{
+    padding: 6px 16px;
+    border: 2px solid royalblue;
+    border-radius: 8px;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1299px){
+
+    .container{
+        max-width: 100%;
+        padding: 0px 20px;
+    }
+
+    .header-menu ul li {
+        padding: 0px 6px;
+    }
+
+    .card {
+        width: 22.6%;
+    }
+
+    .card:nth-child(4) {
+        margin-right: 6px;
+    }
+}       
+
+@media only screen and (min-width: 768px) and (max-width: 991px){
+
+    .container{
+        max-width: 100%;
+        margin: 0px 20px;
+    }
+
+    .card {
+        width: 30%;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px){
+
+    .container{
+        max-width: 100%;
+        margin: 0 20px;
+    }
+
+    .card {
+        width: 45.4%;
+    }
+}
+
+@media only screen and (min-width:376px) and (max-width:667px){
+    
+    .container{
+        max-width: 100%;
+        margin: 0 20px;
+    }
+    .name {
+        float: right;
+    }
+
+    .logo {
+        width: 35%;
+    }
+    
+    .card {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width:375px){
+
+    .container{
+        max-width: 100%;
+        margin: 0 20px;
+    }
+
+    .logo {
+        width: 50%;
+    }
+
+    .name {
+        width: 50%;
+        float: right;
+    }
+
+    .card {
+        width: 89%;
+    }
+
+    .helpDesk {
+        bottom: 50px;
+    }
+}
